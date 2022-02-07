@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-pattern-desktop.svg);
+    margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+    background-color:  hsl(0, 100%, 98%);
+    background-size: cover;
+}
+main{
+    display: flex;
+    min-height: 100vh;
+}
+.logo{
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.right{
+    background-image: url(../images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.right{
+    width: 40%;
+}
+.left{
+    padding-left: 139px;
+    padding-right: 201px;
+    width: 60%;
+}
+.left_function{
+    max-width: 450px;
+    margin: auto;
+}
+h1{
+    color: hsl(0, 6%, 24%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: 600;
+}
+samp{
+    font-weight: 200;
+    color:hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    line-height: 1.6;
+    Font-size: 17px;
+    color:hsl(0, 36%, 70%);
+    margin-bottom: 40px;
+}
+form#form{
+    position: relative;
+}
+.form{
+    position: relative;
+}
+input{
+    outline-width: 0;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    padding:15px 30px;
+    width: 100%
+}
+.form.error input{
+    border: 1px solid hsl(0, 93%, 68%);
+}
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+.error_i{
+    display: none;
+    margin-top: 16px;
+    margin-left: 300px;
+    position: absolute;
+}
+.form.error .error_i{
+    display: inline;
+}
+.submet{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 2px 5px 10px hsl(0,36%,70%,0.5);
+    border:none;
+    padding: 15px;
+    border-radius:50px;
+    width: 100px;
+    height: 53px;
+}
+small{
+    display: none;
+    color: hsl(0, 74%, 74%);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.form.error small{
+    display: block;
+}
+@media screen and (max-width:780px)  and (min-width: 580px){
+    .logo{
+        width: 125px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    form#form{
+        padding-left: 70px;
+        padding-right: 201px;
+    }
+    h1{
+        padding-left: 70px;
+    }
+    p{
+        padding-left: 70px;
+    }
+    .hero-mobile{
+        padding: 0;
+        display: block;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .left{
+        margin: 0px 29px 30px 29px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .right{
+        display: none;
+    }
+}
+@media screen and (max-width:580px){
+    .logo{
+        width: 125px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .hero-mobile{
+        display: block;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    br{
+        display: none;
+    }
+    .left{
+        margin: 0px 29px 30px 29px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .right{
+        display: none;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

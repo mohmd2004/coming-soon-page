@@ -1,0 +1,19 @@
+.hero-mobile{
+    display: none;
+}
+@media screen and (max-width:780px){
+    .hero-mobile{
+        display: block;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}
+@media screen and (max-width:580px){
+    .hero-mobile{
+        display: block;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}
